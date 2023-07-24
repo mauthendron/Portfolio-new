@@ -14,7 +14,7 @@ const App = () => {
 			<Router>
 				<Navbar />
 				<Routes>
-					<Route path='/' element={<Home />} />
+					<Route path='/Portfolio-new' element={<Home />} />
 					<Route path='/projects' element={<Projects />} />
 					<Route path='/contacts' element={<Contacts />} />
 					<Route path='/project/:id' element={<Project />} />

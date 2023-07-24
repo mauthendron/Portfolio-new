@@ -20,14 +20,14 @@ const Navbar = () => {
 			<nav className='nav'>
 				<div className='container'>
 					<div className='nav-row'>
-						<NavLink to='/' className='logo'>
+						<NavLink to='/Portfolio-new' className='logo'>
 							<strong>Frontend</strong> portfolio
 						</NavLink>
-						<DarkButton/>
+						<DarkButton />
 						<ul className='nav-list'>
 							<li className='nav-list__item'>
 								<NavLink
-									to='/'
+									to='/Portfolio-new'
 									className={({ isActive }) =>
 										isActive ? activeLink : normalLink
 									}
