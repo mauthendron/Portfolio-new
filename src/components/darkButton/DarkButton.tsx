@@ -6,15 +6,15 @@ import { detectDarkMode } from '../../utils/detectDarkMode'
 
 const DarkButton = () => {
 	const [darkMode, setDarkMode] = useState(detectDarkMode)
-	const btnRef = useRef(null)
+	const btnRef = useRef<HTMLButtonElement>(null)
 
 	useEffect(() => {
 		if (darkMode === 'dark') {
 			document.body.classList.add('dark')
-			btnRef.current.classList.add('dark-mode-btn--active')
+			btnRef.current && btnRef.current.classList.add('dark-mode-btn--active')
 		} else {
 			document.body.classList.remove('dark')
-			btnRef.current.classList.remove('dark-mode-btn--active')
+			btnRef.current && btnRef.current.classList.remove('dark-mode-btn--active')
 		}
 	}, [darkMode]);
 

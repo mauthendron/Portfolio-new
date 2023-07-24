@@ -3,9 +3,9 @@ import BtnGitHub from '../components/btnGitHub/BtnGitHub'
 import projects from '../helpers/projectsList'
 
 const Project = () => {
-	const { id } = useParams()
-	const project = projects[id]
-	console.log(project)
+	const { id } = useParams<{id: string}>()
+	const projectId = Number(id); 
+	const project = projects[projectId]
 	return (
 		<>
 			<main className='section'>

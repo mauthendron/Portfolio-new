@@ -11,49 +11,56 @@ import project05Big from '../img/projects/05-big.jpg'
 import project06 from '../img/projects/06.jpg'
 import project06Big from '../img/projects/06-big.jpg'
 
+interface Project {
+	title: string,
+	skills: string,
+	img: string,
+	imgBig: string,
+	gitHubLink: string
+}
 
-const projects = [
+const projects: Project[] = [
 	{
 		title: 'Gaming streaming portal',
 		skills: 'React, Node.js, MongoDB',
 		img: project01,
 		imgBig: project01Big,
-		githubLink: 'http://github.com/',
+		gitHubLink: 'http://github.com/',
 	},
 	{
 		title: 'Video service',
 		skills: 'React, Node.js, MongoDB',
 		img: project02,
 		imgBig: project02Big,
-		githubLink: 'http://github.com/',
+		gitHubLink: 'http://github.com/',
 	},
 	{
 		title: 'Video portal',
 		skills: 'React, Node.js, MongoDB',
 		img: project03,
 		imgBig: project03Big,
-		githubLink: 'http://github.com/',
+		gitHubLink: 'http://github.com/',
 	},
 	{
 		title: 'Dating app',
 		skills: 'React, Node.js, MongoDB',
 		img: project04,
 		imgBig: project04Big,
-		githubLink: 'http://github.com/',
+		gitHubLink: 'http://github.com/',
 	},
 	{
 		title: 'Landing',
 		skills: 'React, Node.js, MongoDB',
 		img: project05,
 		imgBig: project05Big,
-		githubLink: 'http://github.com/',
+		gitHubLink: 'http://github.com/',
 	},
 	{
 		title: 'Gaming community',
 		skills: 'React, Node.js, MongoDB',
 		img: project06,
 		imgBig: project06Big,
-		githubLink: 'http://github.com/',
+		gitHubLink: 'http://github.com/',
 	},
 ]
 
